@@ -1,4 +1,5 @@
 contourpy==1.4.0
+cowsay==6.1
 cycler==0.12.1
 fonttools==4.66.1
 iniconfig==2.3.1
