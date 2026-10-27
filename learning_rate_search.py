@@ -22,14 +22,14 @@ def train_model(learning_rate):
         w = w - (learning_rate * gradient_w)
 
 
-learning_rates = np.arange(0.163, 0.168, 0.001)
+learning_rates = np.arange(0.163, 0.168, 0.0001)
 best_lr = None
 best_iterations = float("inf")
 
 
 for lr in learning_rates:
     iterations = train_model(lr)
-    print(lr, iterations)
+    print(f"{lr:.4f} | {iterations} iterations")
     if iterations is not None and iterations < best_iterations:
         best_iterations = iterations
         best_lr = lr
